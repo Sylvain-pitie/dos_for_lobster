@@ -1,4 +1,4 @@
-# dos_plot.py
+# dos_lobster.py
 
 Plot total and projected densities of states from LOBSTER output, with energy on
 the vertical axis and a colour scheme designed for publication figures.
@@ -65,7 +65,7 @@ full command line for reproducibility.
 Always start by inspecting what the file actually contains:
 
 ```bash
-dos_plot.py --list-orbitals
+dos_lobster.py --list-orbitals
 ```
 
 ```
@@ -80,7 +80,7 @@ This tells you which projections exist and gives the site numbering used
 elsewhere. Then plot:
 
 ```bash
-dos_plot.py --orbitals 'H:s;Na:s,p;Be:s,p' \
+dos_lobster.py --orbitals 'H:s;Na:s,p;Be:s,p' \
             --ymin -6 --ymax 8 --fontsize 14 --linewidth 2 \
             --output dos_NaBeH3
 ```
